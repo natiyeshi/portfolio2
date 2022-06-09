@@ -10,6 +10,7 @@ body{
 
 
  #nav-bar{
+     display: none;
     background-color: var(--main-color);
     margin: -.9em;
     position:relative;
