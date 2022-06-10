@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="fonts.css">
+    <script src="js.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,30 @@
 </head>
 <body>
     <nav id="nav-bar">
-        <div class="nav-head">Nati - Yeshi</div>
+        <div class="nav-head"><a href="#home">Nati - Yeshi</a></div>
         <div class="nav-list">
-            <div class="list"><a href="#home">Home</a></div>
-            <div class="list"><a href="#portfolio">Portfolio</a></div>
-            <div class="list"><a href="#about">About</a></div>
-            <div class="list"><a href="#discription">Discription</a></div>
+            <div class="list list-1" ><a href="#home"><span onmouseover="main1(this,1)" onmouseout="main2(this,1)">Home</span>
+                <svg class="nav-hover1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                </svg>
+                </a>
+            </div>
+            <div class="list list-2"><a href="#portfolio"><span onmouseover="main1(this,2)" onmouseout="main2(this,2)">Portfolio</span>
+                <svg class="nav-hover2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-back" viewBox="0 0 16 16">
+                    <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
+                  </svg>
+            </a></div>
+            <div class="list list-3"><a href="#about"><span onmouseover="main1(this,3)" onmouseout="main2(this,3)">About</span>
+                <svg class="nav-hover3" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
+                  </svg>
+            </a></div>
+            <div class="list list-4"><a href="#discription"><span onmouseover="main1(this,4)" onmouseout="main2(this,4)">Discription</span>
+                <svg class="nav-hover4" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                  </svg>
+            </a></div>
                   
         </div>
         <div class="toggle" ><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-justify-right" viewBox="0 0 16 16">
@@ -32,7 +51,7 @@
             <img class="front-img" src="photo/photo_2022-06-09_12-18-28.jpg" alt="">
         </div>
         <div class="front-heads">
-            <h1 class="front-h1">Hi, there i am</h1>
+            <h1 class="front-h1">Hi there, I am</h1>
             <p class="front-para1">NATNAEL YESHIWAS</p>
             <p class="front-para2"><strong>Web Developer</strong></p>
         </div>
@@ -86,19 +105,19 @@
 
     <footer class="footer " id="about">
         <div class="footer-body">
-            <div class="footer-rows">
-                <div class="footer-rows-col"><a href="#about">ABOUT</a></div>
-                <div class="footer-rows-col"><a href="#portfolio">PORTFOLIO</a></div>
-                <div class="footer-rows-col"><a href="#home">HOME</a></div>
+            <div class="footer-rows1">
+                <div class="footer-rows-col1"><a href="#about">ABOUT</a></div>
+                <div class="footer-rows-col1"><a href="#portfolio">PORTFOLIO</a></div>
+                <div class="footer-rows-col1"><a href="#home">HOME</a></div>
             </div>
-            <div class="footer-rows">
-                <div class="footer-rows-col"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+            <div class="footer-rows2">
+                <div class="footer-rows-col2"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="white" class="bi bi-github" viewBox="0 0 16 16">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                   </svg></a></div>
-                <div class="footer-rows-col"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                <div class="footer-rows-col2"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                   </svg></a></div>
-                <div class="footer-rows-col"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="white" class="bi bi-telegram" viewBox="0 0 16 16">
+                <div class="footer-rows-col2"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="white" class="bi bi-telegram" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
                   </svg></a></div>
             </div>
@@ -111,3 +130,7 @@
 
 </body>
 </html>
+
+<script>
+    
+</script>
